@@ -1,8 +1,29 @@
-#include <stdio.h>
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// PRÁTICA: SISTEMA DE BIBLIOTECA - PARTE 2
+//
+// OBJETIVO DESTA PARTE:
+//Adcionar a funcionalidade de emprestimo e introduzir a alocação dinâmica.
+// - Os arrays de livros e empréstimos são alcoados com mallc/calloc.
+// - Nova struct para emprestimo.
+// - Liberação de memória com free.
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-int main() {
-    printf("Configuracao de sucesso! Pressione ENTER para sair.\n");
-    // Adiciona uma pausa para que o terminal nao feche imediatamente
-    getchar(); 
-    return 0;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+//constantes globais
+
+#define MAX_LIVROS 50
+#define MAX_EMPRESTIMOS 100
+#define TAM_STRING 100
+
+// definir as estruturas
+
+struct livro{
+    char nome[TAM_STRING];
+    char autor[TAM_STRING];
+    char editora[TAM_STRING];
+    int edicao;
+    
 }
