@@ -25,5 +25,20 @@ struct livro{
     char autor[TAM_STRING];
     char editora[TAM_STRING];
     int edicao;
-    
+    int disponivel;
+
+    //nova struct para armazena as informações de emprestimos
+
+struct emprestimo{
+    int indicelivro;// qual livro foi emprestado do array 'biblioteca' foi emprestad
+    char nomeusuario [TAM_STRING];
 }
+
+// limpar o buffer de entraga:
+
+    void limparBufferEntrada() {
+        int c;
+        while ((c = getchar()) ! = '\n' && c != EOF);
+    }
+
+    //
