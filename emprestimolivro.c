@@ -41,4 +41,25 @@ struct emprestimo{
         while ((c = getchar()) ! = '\n' && c != EOF);
     }
 
-    //
+    //Função Principal (main)
+int main(){
+    //alocação dinâmica de memória
+    //agora, em vez de arrays estáticos, usamos pronteiros
+    struct Livro *biblioteca;
+    struct Emprestimo *emprestimo;
+
+    //Usamos calloc para o array de livros. calloc(num_elementos, tamanho_de_cada_elemento)
+    //VAntagem: incializavtoda a memória com zeros.vIsso significa que 'disponível' já começa com valor armazenado
+    biblioteca = (struct Livro *) malloc(MAX_EMPRESTIMOS * sizeof(struct  lIvro));
+    //Usamos malloc para o array de empréstimos. malloc(tamanho_total_em_bytes)
+    emprestimo = (struct Emprestimo *) malloc(MAX_EMPRESTIMOS * sizeof(struct Emprestimo));
+    {
+        /* data */
+    };
+    ))
+    {
+        /* data */
+    };
+    )
+    
+}
