@@ -53,13 +53,22 @@ int main(){
     biblioteca = (struct Livro *) malloc(MAX_EMPRESTIMOS * sizeof(struct  lIvro));
     //Usamos malloc para o array de empréstimos. malloc(tamanho_total_em_bytes)
     emprestimo = (struct Emprestimo *) malloc(MAX_EMPRESTIMOS * sizeof(struct Emprestimo));
-    {
-        /* data */
-    };
-    ))
-    {
-        /* data */
-    };
-    )
+
+    //VERIFICAÇÃO: É crucial verifcar se a alocação de memoria deu certo
     
+    if(biblioteca == NULL || emprestimos == NULL){
+        printf("Erro: Falha ao alocar memoria.\n");
+        return 1; // Retorna 1 para indicar um erro.
+    }
+
+    int totalLivros = 0;
+    int totalEmpresimtos = 0;
+    int opcao;
+
+    do {
+        printf("+++++++++++++++++++++++++++++/n");
+        printf(" BIBLIOTECA - PARTE 2\n");
+        printf("++++++++++++++++++++++++++++\n");
+        printf
+    }
 }
