@@ -69,6 +69,40 @@ int main(){
         printf("+++++++++++++++++++++++++++++/n");
         printf(" BIBLIOTECA - PARTE 2\n");
         printf("++++++++++++++++++++++++++++\n");
-        printf
+        printf("1 - Cadastrar novo livro\n");
+        printf("2 - Listar todos os livro\n");
+        printf("3 - Realizar emprestimo\n");
+        printf("4 - Listar emprestimos\n");
+        printf("0 - Sair\n");
+        printf("+++++++++++++++++++++++++++++");
+        printf("Escolha uma opção:");
+        scanf("%d", &opcao);
+        limparBufferEntrada();
+
+        switch (opcao) {
+        case 1: // cadastro do livro
+            printf("___ CADASTRO DO NOVO LIVRO___\n\n");
+            if (totalLivros < MAX_LIVROS) {
+                //o acesso aos campos é igual ao do array estático.
+                printf("Digite o nome do Livro:");
+                fgets(biblioteca[totalLivros].nome, TAM_STRING, stdin);
+
+                //... (as dmeais leituras são iguais à parte 1) ...
+                 printf("Digite o nome do autor:");
+                fgets(biblioteca[totalLivros].autor, TAM_STRING, stdin);
+                printf("Digite a editora:");
+                fgets(biblioteca[totalLivros].editora, TAM_STRING, stdin);
+
+                biblioteca[totalLivros].nome[strcspn(biblioteca[totalLivros].nome, "\n")] = 
+                biblioteca[totalLivros].autor[strcspn(biblioteca[totalLivros].autor, "\n")] = 
+                biblioteca[totalLivros].editora[strcspn(biblioteca[totalLivros].editora, "\n")] = 
+                
+                printf("Digite a edcao:");
+                scanf("%d", &biblioteca[totalLivros].edicao);
+                limparBufferEntrada();
+
+                //Ao contra
+            }
+        }
     }
 }
